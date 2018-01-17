@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+
+/* BASE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font: 100% "Roboto", sans-serif;
+    color: #212121;
+    background: #e3e3e3;
+    overflow-x: hidden;
+    min-height: 100%;
+    overflow-y: hidden;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    -webkit-animation: fade-in 1s;
+}
+
+a {
+    color: #fe6b88;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4em;
+    font: "Open Sans", sans-serif;
+    width: 50%;
+    letter-spacing: 3px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font: "Open Sans", sans-serif;
+    width: 50%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/*
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+    width: 35%;
+    height: 350px;
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    z-index: 1;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+    display: block;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+}
+
+#quote {
+    font-size: 100%;
+    display: block;
+    position: relative;
+    padding: 2%;
+}
+
+#character {
+    font-size: 1.1em;
+    padding: 0 0 8% 1%;
+    display: block;
+}
+
+button {
+    text-align: center;
+    position: relative;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #4c4c4c;
+    width: 125px;
+    padding: 1%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 0px #1e1e1e;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+button:hover {
+    background-color: #3c3c3c;
+    transition: all 0.1s ease-in;
+}
+
+button:active {
+    background-color: #1e1e1e;
+    transform: translateY(4px);
+    border-bottom-width: 2px;
+    box-shadow: none;
+}
+
+.image-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+}
+
+#image {
+    z-index: -1;
+    -webkit-animation: fade-in 3s;
+    align-self: flex-end;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 450px;
+    height: 350px;
+}
+
+
+/* Blockquote
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+blockquote {
+    position: relative;
+    margin-top: 11%;
+    padding: 5% 8%;
+    text-align: center;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+}
+
+blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+
+blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D";
+}
+
+
+/* Keyframes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
